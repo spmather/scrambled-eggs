@@ -6,13 +6,14 @@
 1. Download or git clone
 2. Run Powershell as administrator
 3. Turn off execution policy
-> Set-ExecutionPolicy Unrestricted
-Or
-3b. Run Powershell bypassing execution policy
-> . $pshome\powershell.exe -executionpolicy bypass
+``` Set-ExecutionPolicy Unrestricted ```
+
+3. Run Powershell bypassing execution policy
+``` . $pshome\powershell.exe -executionpolicy bypass ```
+
 4. Load function
-> /path/to/script.ps1
-> Format-ScrambledEggs
+``` /path/to/script.ps1 ```
+``` Format-ScrambledEggs ```
 
 ## Parameters
 
@@ -30,18 +31,27 @@ Script currently works and tested with the Latin alphabet without diacritics.
 Script requires a complete legend to work correctly, which means any character in the "to character" column must have a "from character".
 This may seem about backwards, so here's an example:
 
-> Substitution.csv
-> a,b
-> b,c
+```
+{
+    Substitution.csv
+    a,b
+    b,c
+}
+```
 
 This won't work because when scrambled, "b" changes to "c", but when descrambled, "c" changes to "b" changes to "a".
 
 To form a completed legend use:
 
-> Substitution.csv
-> a,b
-> b,c
-> c,a
+
+```
+{
+    Substitution.csv
+    a,b
+    b,c
+    c,a
+}
+```
 
 Here, there is no left out "to char".
 
