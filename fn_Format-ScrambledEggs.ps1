@@ -1,6 +1,8 @@
+#!/bin/pwsh
 # Author : spmather
 # Date   : 2025-10-11
-# Version: 0.1
+# Update : 2025-10-26
+# Version: 0.2
 
 # Coming soon
 #    Generate random substitution legend and save it as an exported file
@@ -31,7 +33,7 @@ There is also an issue with capitalization due to powershell not being case sens
 It cannot process numbers until the token is generation is adjusted to use something else
 
 .EXAMPLE
-Wworking:  format-scrambledeggs -filepath ./in/text.txt -OutPath ./out/out.txt -Legend ./substitution.csv -Scramble
+Working:  format-scrambledeggs -filepath ./in/text.txt -OutPath ./out/out.txt -Legend ./substitution.csv -Scramble
 Working:  format-scrambledeggs -filepath ./out/out.txt -OutPath ./out/out2.txt -Legend ./substitution.csv -Unscramble
 Not working:  format-scrambledeggs -filepath ./in/windowsvista_1920x1200.bmp -OutPath ./out/windowsvista_1920x1200_out.bmp -Legend ./substitution.csv -Scramble
 Not working:  format-scrambledeggs -filepath ./out/windowsvista_1920x1200_out.bmp -OutPath ./unscrambled/windowsvista_1920x1200_unscram.bmp  -Legend ./substitution.csv -Unscramble
