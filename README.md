@@ -1,5 +1,5 @@
 # Scrambled Eggs
-# Powershell-based obfuscator
+# Powershell-based Substitution Cypher
 
 ## How to use
 
